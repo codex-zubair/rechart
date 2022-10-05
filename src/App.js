@@ -52,32 +52,32 @@ function App() {
 
   return (
     <div className="App">
-    <h1>Re-Chart</h1>
-    
-
-    <LineChart width={800} height = {400} data = {data} >
-
-    
-    <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-
-    <XAxis dataKey="name"/>
-    <YAxis/>
-
-    <Tooltip/>
-    </LineChart>
+      <h1>Re-Chart</h1>
 
 
-    <Treemap
-  width={730}
-  height={250}
-  data={data}
-  dataKey="uv"
-  ratio={4 / 3}
-  stroke="#fff"
-  fill="#8884d8" style={{color:'red', marginTop:'100px', marginLeft:'50px'}}
-/>
-    
-    
+      <LineChart width={800} height={400} data={data} >
+
+
+        <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+
+        <XAxis dataKey="name" />
+        <YAxis />
+
+        <Tooltip />
+      </LineChart>
+
+
+      <Treemap
+        width={730}
+        height={250}
+        data={data}
+        dataKey="uv"
+        ratio={4 / 3}
+        stroke="#fff"
+        fill="#8884d8" style={{ color: 'red', marginTop: '100px', marginLeft: '50px' }}
+      />
+
+
     </div>
   );
 }
